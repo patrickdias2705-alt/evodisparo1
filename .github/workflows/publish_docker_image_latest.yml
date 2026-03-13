@@ -9,6 +9,7 @@ jobs:
   build_deploy:
     name: Build and Deploy
     runs-on: ubuntu-latest
+    if: ${{ secrets.DOCKER_USERNAME != '' }}
     permissions:
       contents: read
       packages: write
