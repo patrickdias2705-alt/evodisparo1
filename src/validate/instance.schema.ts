@@ -44,7 +44,12 @@ export const instanceSchema: JSONSchema7 = {
     readStatus: { type: 'boolean' },
     syncFullHistory: { type: 'boolean' },
     wavoipToken: { type: 'string' },
-    qrTimeout: { type: 'number', minimum: 30, maximum: 600, description: 'QR code timeout in seconds (Baileys, default ~45)' },
+    qrTimeout: {
+      type: 'number',
+      minimum: 30,
+      maximum: 600,
+      description: 'QR code timeout in seconds',
+    },
     // Proxy
     proxyHost: { type: 'string' },
     proxyPort: { type: 'string' },
