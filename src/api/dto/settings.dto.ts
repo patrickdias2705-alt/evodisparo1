@@ -1,0 +1,12 @@
+export class SettingsDto {
+  rejectCall?: boolean;
+  msgCall?: string;
+  groupsIgnore?: boolean;
+  alwaysOnline?: boolean;
+  readMessages?: boolean;
+  readStatus?: boolean;
+  syncFullHistory?: boolean;
+  wavoipToken?: string;
+  /** QR code timeout in seconds (Baileys). */
+  qrTimeout?: number;
+}
